@@ -3,6 +3,7 @@ package oving5.oppgave1;
 public class Broek {
     private int teller;
     private int nevner;
+
     // getter og setter metoder
     // getTeller()
     Broek(int teller, int nevner) {

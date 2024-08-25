@@ -28,9 +28,8 @@ public class oppgave2 {
             System.out.println("Ønsker du aa simulere en runde paa nytt? (ja/nei)");
             String input = scanner.next();
             if (input.equalsIgnoreCase("ja")) {
-               continue;
-            }
-            else {
+                continue;
+            } else {
                 break;
             }
         }

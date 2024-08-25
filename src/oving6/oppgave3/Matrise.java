@@ -7,6 +7,20 @@ public class Matrise {
         this.matrise = matrise;
     }
 
+    private static Matrise transponer(Matrise matrise) {
+        ///jdjdjd
+        int kolonne = matrise.kolonneLengde();
+        int rad = matrise.radLengde();
+        int[][] nyMatrise = new int[kolonne][rad];
+
+        for (int i = 0; i < rad; i++) {
+            for (int j = 0; j < kolonne; j++) {
+                nyMatrise[i][j] = matrise.getMatrise()[j][i];
+            }
+        }
+        return new Matrise(nyMatrise);
+
+    }
 
     public int radLengde() {
         return matrise.length;
@@ -33,6 +47,10 @@ public class Matrise {
         return m;
     }
 
+//    public Matrise multipliser(Matrise matrise) {
+
+    //   }
+
     public Matrise adder(Matrise matrise) {
         Matrise m = check(matrise);
         if (m == null) return null;
@@ -41,34 +59,15 @@ public class Matrise {
 
         for (int i = 0; i < m.radLengde(); i++) {
             for (int j = 0; j < m.kolonneLengde(); j++) {
-               nyMatrise[i][j] = m.getMatrise()[i][j] + this.matrise[i][j];
+                nyMatrise[i][j] = m.getMatrise()[i][j] + this.matrise[i][j];
             }
         }
 
         return new Matrise(nyMatrise);
     }
-
-//    public Matrise multipliser(Matrise matrise) {
-
- //   }
 
     private boolean sammeDimensjon(Matrise matrise) {
         return radLengde() == matrise.radLengde() && kolonneLengde() == matrise.kolonneLengde();
-    }
-
-    private static Matrise transponer(Matrise matrise) {
-        ///jdjdjd
-        int kolonne = matrise.kolonneLengde();
-        int rad = matrise.radLengde();
-        int[][] nyMatrise = new int[kolonne][rad];
-
-        for (int i = 0; i < rad; i++) {
-            for (int j = 0; j < kolonne; j++) {
-                nyMatrise[i][j] = matrise.getMatrise()[j][i];
-            }
-        }
-        return new Matrise(nyMatrise);
-
     }
 
 

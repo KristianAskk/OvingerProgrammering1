@@ -1,8 +1,8 @@
 package oving4.oppgave2;
 
 public class Spiller {
-    private int sumPoeng;
     private static final java.util.Random RANDOM = new java.util.Random();
+    private int sumPoeng;
 
 
     Spiller() {

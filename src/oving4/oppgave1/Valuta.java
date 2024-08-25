@@ -2,8 +2,8 @@ package oving4.oppgave1;
 
 public class Valuta {
 
-    private double kursPerNok;
-    private String valutaNavn;
+    private final double kursPerNok;
+    private final String valutaNavn;
 
     Valuta(double kursPerNok, String valutaNavn) {
         this.kursPerNok = kursPerNok;

@@ -1,16 +1,16 @@
 package oving9.oppgave1;
 
 public class Student {
-    private String navn;
-    private int antOppg;
+    private final String navn;
+    private int antOppg; // antall godkjente oppgaver.
 
     Student(String navn, int antOppg) {
-        this.navn = navn;
+        this.navn = navn.strip();
         this.antOppg = antOppg;
     }
 
     public String getNavn() {
-       return navn;
+        return navn;
     }
 
     public int getAntOppg() {
@@ -18,11 +18,11 @@ public class Student {
     }
 
     public void oekAntOppg(int oekning) {
-        this.antOppg += antOppg;
+        antOppg += oekning;
     }
 
     @Override
     public String toString() {
-        return "TODO";
+        return "Navn: " + navn + ", antall godkjente oppgaver: " + antOppg;
     }
 }

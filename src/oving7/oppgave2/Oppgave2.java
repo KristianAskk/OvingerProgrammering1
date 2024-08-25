@@ -14,7 +14,5 @@ public class Oppgave2 {
         System.out.println(tb.getCapitalizedTekst());
 
 
-
-
     }
 }

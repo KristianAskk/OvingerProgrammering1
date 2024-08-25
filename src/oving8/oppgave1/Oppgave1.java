@@ -37,10 +37,10 @@ public class Oppgave1 {
                 System.out.println("5. Skriv ut skattetrekk per år");
                 System.out.println("6. Avslutt");
 
-                int choice = scanner.nextInt();
+                int valg = scanner.nextInt();
                 scanner.nextLine();
                 boolean avslutt = false;
-                switch (choice) {
+                switch (valg) {
                     case 1:
                         System.out.println("Skriv inn ny månedslønn: ");
                         int nyMaanedslonn = scanner.nextInt();

@@ -23,7 +23,7 @@ public class Oppgave2 {
             System.out.println("Antall bokstaver: " + tekstAnalyse.antallBokstaver());
             System.out.println("Hvor stor del av bokstavene er ikke-bokstaver: " + tekstAnalyse.ikkeBokstaverProsent() + "%");
             System.out.println("Antall forekomster av bokstaven " + bokstav + ": " + tekstAnalyse.forekomsterBestemtBokstav(bokstav));
-            System.out.printf("bokstaver / bokstavene som forekommer oftest:");
+            System.out.print("bokstaver / bokstavene som forekommer oftest:");
 
             for (String bokstavForekomst : tekstAnalyse.flestForekommelser()) {
                 System.out.printf(" %s", bokstavForekomst);

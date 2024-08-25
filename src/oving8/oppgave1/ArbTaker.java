@@ -33,12 +33,12 @@ public class ArbTaker {
         return maanedsloenn;
     }
 
-    public double getSkatteprosent() {
-        return skatteprosent;
-    }
-
     public void setMaanedsloenn(int maanedsloenn) {
         this.maanedsloenn = maanedsloenn;
+    }
+
+    public double getSkatteprosent() {
+        return skatteprosent;
     }
 
     public void setSkatteprosent(double skatteprosent) {

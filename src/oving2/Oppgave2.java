@@ -1,10 +1,8 @@
 package oving2;
 
-import java.util.Scanner;
-
 public class Oppgave2 {
 
-    public double kiloPris(double pris, double vekt)  {
+    public static double kiloPris(double pris, double vekt) {
         return pris / vekt;
     }
 

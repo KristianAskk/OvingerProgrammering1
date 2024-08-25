@@ -19,7 +19,7 @@ public class TekstBehandling {
     public double gjennomsnittligOrdlengde() {
         return Arrays.stream(streng.split(" "))
                 .map(ord -> ord.replaceAll(PERIODE_REGEX, ""))
-                .mapToInt(ord -> ord.length())
+                .mapToInt(String::length)
                 .average()
                 .orElse(0);
     }
@@ -35,7 +35,7 @@ public class TekstBehandling {
     }
 
     public String skiftUtOrd(String gammel, String ny) {
-        return streng.replaceAll(gammel, ny);
+        return streng.replaceAll("\\b" + gammel + "\\b(?=[.,!?;:]?|\\s|$)", ny);
     }
 
     public String getTekst() {
