@@ -6,7 +6,7 @@ public class Rett {
     private final RettType type;
     private final String oppskrift;
 
-    Rett(String navn, int pris, RettType type, String oppskrift) {
+    public Rett(String navn, int pris, RettType type, String oppskrift) {
         this.navn = navn;
         this.pris = pris;
         this.type = type;

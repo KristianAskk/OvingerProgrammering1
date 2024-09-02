@@ -6,15 +6,15 @@ public class Broek {
 
     // getter og setter metoder
     // getTeller()
-    Broek(int teller, int nevner) {
-        if (nevner == 0) {
-            throw new IllegalArgumentException("nevner kan ikke vaere 0.");
+    public Broek(int teller, int nevner) {
+        if (nevner == 0 || teller == 0) {
+            throw new IllegalArgumentException("nevner og/eller teller kan ikke vaere 0.");
         }
         this.teller = teller;
         this.nevner = nevner;
     }
 
-    Broek(int teller) {
+    public Broek(int teller) {
         this.teller = teller;
         this.nevner = 1;
     }

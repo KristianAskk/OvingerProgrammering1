@@ -32,6 +32,7 @@ public class Oppgave1 {
 
             int valg = scanner.nextInt();
 
+            // TODO: Til neste gang til du skriver funksjoner, og enkapsuler logikken under switch-kallninger.
             switch (valg) {
                 case 1:
                     System.out.println("Skriv inn navn på student: ");

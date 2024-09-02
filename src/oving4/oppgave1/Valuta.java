@@ -5,7 +5,8 @@ public class Valuta {
     private final double kursPerNok;
     private final String valutaNavn;
 
-    Valuta(double kursPerNok, String valutaNavn) {
+
+    public Valuta(double kursPerNok, String valutaNavn) {
         this.kursPerNok = kursPerNok;
         this.valutaNavn = valutaNavn;
     }

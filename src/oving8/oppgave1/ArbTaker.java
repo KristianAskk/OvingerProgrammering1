@@ -9,7 +9,7 @@ public class ArbTaker {
     private int maanedsloenn;
     private double skatteprosent;
 
-    ArbTaker(Person personalia, int arbtakernr, int ansettelseaar, int maanedsloenn, double skatteprosent) {
+    public ArbTaker(Person personalia, int arbtakernr, int ansettelseaar, int maanedsloenn, double skatteprosent) {
         this.personalia = personalia;
         this.arbtakernr = arbtakernr;
         this.ansettelseaar = ansettelseaar;
@@ -54,7 +54,7 @@ public class ArbTaker {
     }
 
     public double skatteTrekkPerAar() {
-        return (skatteprosent * maanedsloenn * 10) + (skatteprosent * maanedsloenn * 0.5);
+        return (skatteTrekk() * 10) + (skatteTrekk() * 0.5);
     }
 
     public String formatertNavn() {

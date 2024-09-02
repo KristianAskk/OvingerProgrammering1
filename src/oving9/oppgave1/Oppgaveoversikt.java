@@ -6,11 +6,12 @@ import java.util.List;
 
 public class Oppgaveoversikt {
 
-    private final List<Student> studenter = new ArrayList<>();
+    private final List<Student> studenter;
     private int antStud = 0;
 
 
-    Oppgaveoversikt() {
+    public Oppgaveoversikt() {
+        this.studenter = new ArrayList<>();
     }
 
     public int getAntStud() {

@@ -5,7 +5,7 @@ public class Student {
     private int antOppg; // antall godkjente oppgaver.
 
     Student(String navn, int antOppg) {
-        this.navn = navn.strip();
+        this.navn = navn;
         this.antOppg = antOppg;
     }
 

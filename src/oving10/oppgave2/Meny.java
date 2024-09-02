@@ -6,7 +6,7 @@ import java.util.List;
 public class Meny {
     private final List<Rett> retter;
 
-    Meny() {
+    public Meny() {
         this.retter = new ArrayList<Rett>();
     }
 

@@ -6,7 +6,7 @@ import java.util.List;
 public class MenyRegister {
     private final List<Meny> menyer;
 
-    MenyRegister() {
+    public MenyRegister() {
         this.menyer = new ArrayList<Meny>();
     }
 

@@ -10,7 +10,7 @@ public class Oppgave2 {
             }
         }
         for (int i = 0; i < 100000; i++) {
-            double test = MinRandom.nesteDesimaltall(0, 3);
+            double test = MinRandom.nesteDesimaltall(0, 483484834);
             if (test > 3 && test > 0) {
                 System.out.printf("Dette er feil %f\n", test);
             }

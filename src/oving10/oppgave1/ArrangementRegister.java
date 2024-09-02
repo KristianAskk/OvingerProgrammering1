@@ -8,7 +8,7 @@ import java.util.List;
 public class ArrangementRegister {
     private final List<Arrangement> arrangementer;
 
-    ArrangementRegister() {
+    public ArrangementRegister() {
         this.arrangementer = new ArrayList<Arrangement>();
     }
 

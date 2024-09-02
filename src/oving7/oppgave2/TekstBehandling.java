@@ -8,7 +8,7 @@ public class TekstBehandling {
     private final String streng;
 
 
-    TekstBehandling(String tekst) {
+    public TekstBehandling(String tekst) {
         this.streng = tekst;
     }
 

@@ -5,7 +5,8 @@ public class Spiller {
     private int sumPoeng;
 
 
-    Spiller() {
+    public Spiller() {
+        this.sumPoeng = 0;
 
     }
 
