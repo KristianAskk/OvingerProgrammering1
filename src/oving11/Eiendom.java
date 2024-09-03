@@ -69,9 +69,12 @@ public class Eiendom {
     /**
      * Setter kommunenummer.
      *
-     * @param kommunenummer Kommunenummer som skal settes.
+     * @param kommunenummer Kommunenummer som skal settes. Må være mellom 101 og 5054 inkluderende.
      */
     public void setKommunenummer(int kommunenummer) {
+        if (kommunenummer < 101 || kommunenummer > 5054) {
+            throw new IllegalArgumentException("Kommunenummer må være mellom 101 og 5054");
+        }
         this.kommunenummer = kommunenummer;
     }
 
